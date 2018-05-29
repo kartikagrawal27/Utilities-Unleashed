@@ -1,0 +1,154 @@
+[
+  {
+    "timestamp": "2016-02-10 00:25:51.340082", 
+    "testcases": [
+      {
+        "description": "Test time usage", 
+        "ptsEarned": 0.0, 
+        "log": "Trying to compile your code...\nFAILED TO COMPILE!\ntime.c:9:18: error: variable has incomplete type 'struct timespec'\n        struct timespec start, end;\n                        ^\ntime.c:9:9: note: forward declaration of 'struct timespec'\n        struct timespec start, end;\n               ^\ntime.c:9:25: error: variable has incomplete type 'struct timespec'\n        struct timespec start, end;\n                               ^\ntime.c:9:9: note: forward declaration of 'struct timespec'\n        struct timespec start, end;\n               ^\ntime.c:11:2: error: implicit declaration of function 'clock_gettime' is invalid in C99 [-Werror,-Wimplicit-function-declaration]\n        clock_gettime(CLOCK_MONOTONIC, &start);\n        ^\ntime.c:11:16: error: use of undeclared identifier 'CLOCK_MONOTONIC'\n        clock_gettime(CLOCK_MONOTONIC, &start);\n                      ^\ntime.c:13:2: error: use of undeclared identifier 'pid_t'\n        pid_t fval = fork();\n        ^\ntime.c:15:5: error: use of undeclared identifier 'fval'\n        if(fval==-1)\n           ^\ntime.c:21:5: error: use of undeclared identifier 'fval'\n        if(fval==0){\n           ^\ntime.c:22:27: error: expected expression\n                execvp(argv[1], argv+1, );\n                                        ^\ntime.c:27:3: error: implicit declaration of function 'waitpid' is invalid in C99 [-Werror,-Wimplicit-function-declaration]\n                waitpid(fval, &status, 0);\n                ^\ntime.c:27:11: error: use of undeclared identifier 'fval'\n                waitpid(fval, &status, 0);\n                        ^\ntime.c:28:6: error: implicit declaration of function 'WIFEXITED' is invalid in C99 [-Werror,-Wimplicit-function-declaration]\n                if(WIFEXITED(status))\n                   ^\ntime.c:29:34: error: implicit declaration of function 'WEXITSTATUS' is invalid in C99 [-Werror,-Wimplicit-function-declaration]\n                        printf(\"Child returned %d\\n\", WEXITSTATUS(status));\n                                                      ^\ntime.c:33:17: error: use of undeclared identifier 'CLOCK_MONOTONIC'\n                clock_gettime(CLOCK_MONOTONIC, &end);\n                              ^\n13 errors generated.\nmake: *** [time.o] Error 1\n", 
+        "name": "time_test_usage", 
+        "ptsPossible": 1.0
+      }, 
+      {
+        "description": "Test env usage", 
+        "ptsEarned": 0.0, 
+        "log": "Did not find correct output", 
+        "name": "env_test_usage", 
+        "ptsPossible": 1.0
+      }, 
+      {
+        "description": "Test time exec failure", 
+        "ptsEarned": 0.0, 
+        "log": "Trying to compile your code...\nFAILED TO COMPILE!\ntime.c:9:18: error: variable has incomplete type 'struct timespec'\n        struct timespec start, end;\n                        ^\ntime.c:9:9: note: forward declaration of 'struct timespec'\n        struct timespec start, end;\n               ^\ntime.c:9:25: error: variable has incomplete type 'struct timespec'\n        struct timespec start, end;\n                               ^\ntime.c:9:9: note: forward declaration of 'struct timespec'\n        struct timespec start, end;\n               ^\ntime.c:11:2: error: implicit declaration of function 'clock_gettime' is invalid in C99 [-Werror,-Wimplicit-function-declaration]\n        clock_gettime(CLOCK_MONOTONIC, &start);\n        ^\ntime.c:11:16: error: use of undeclared identifier 'CLOCK_MONOTONIC'\n        clock_gettime(CLOCK_MONOTONIC, &start);\n                      ^\ntime.c:13:2: error: use of undeclared identifier 'pid_t'\n        pid_t fval = fork();\n        ^\ntime.c:15:5: error: use of undeclared identifier 'fval'\n        if(fval==-1)\n           ^\ntime.c:21:5: error: use of undeclared identifier 'fval'\n        if(fval==0){\n           ^\ntime.c:22:27: error: expected expression\n                execvp(argv[1], argv+1, );\n                                        ^\ntime.c:27:3: error: implicit declaration of function 'waitpid' is invalid in C99 [-Werror,-Wimplicit-function-declaration]\n                waitpid(fval, &status, 0);\n                ^\ntime.c:27:11: error: use of undeclared identifier 'fval'\n                waitpid(fval, &status, 0);\n                        ^\ntime.c:28:6: error: implicit declaration of function 'WIFEXITED' is invalid in C99 [-Werror,-Wimplicit-function-declaration]\n                if(WIFEXITED(status))\n                   ^\ntime.c:29:34: error: implicit declaration of function 'WEXITSTATUS' is invalid in C99 [-Werror,-Wimplicit-function-declaration]\n                        printf(\"Child returned %d\\n\", WEXITSTATUS(status));\n                                                      ^\ntime.c:33:17: error: use of undeclared identifier 'CLOCK_MONOTONIC'\n                clock_gettime(CLOCK_MONOTONIC, &end);\n                              ^\n13 errors generated.\nmake: *** [time.o] Error 1\n", 
+        "name": "time_test_exec", 
+        "ptsPossible": 1.0
+      }, 
+      {
+        "description": "Test env exec failure", 
+        "ptsEarned": 0.0, 
+        "log": "Did not find correct output", 
+        "name": "env_test_exec", 
+        "ptsPossible": 1.0
+      }, 
+      {
+        "description": "Test time", 
+        "ptsEarned": 0.0, 
+        "log": "Trying to compile your code...\nFAILED TO COMPILE!\ntime.c:9:18: error: variable has incomplete type 'struct timespec'\n        struct timespec start, end;\n                        ^\ntime.c:9:9: note: forward declaration of 'struct timespec'\n        struct timespec start, end;\n               ^\ntime.c:9:25: error: variable has incomplete type 'struct timespec'\n        struct timespec start, end;\n                               ^\ntime.c:9:9: note: forward declaration of 'struct timespec'\n        struct timespec start, end;\n               ^\ntime.c:11:2: error: implicit declaration of function 'clock_gettime' is invalid in C99 [-Werror,-Wimplicit-function-declaration]\n        clock_gettime(CLOCK_MONOTONIC, &start);\n        ^\ntime.c:11:16: error: use of undeclared identifier 'CLOCK_MONOTONIC'\n        clock_gettime(CLOCK_MONOTONIC, &start);\n                      ^\ntime.c:13:2: error: use of undeclared identifier 'pid_t'\n        pid_t fval = fork();\n        ^\ntime.c:15:5: error: use of undeclared identifier 'fval'\n        if(fval==-1)\n           ^\ntime.c:21:5: error: use of undeclared identifier 'fval'\n        if(fval==0){\n           ^\ntime.c:22:27: error: expected expression\n                execvp(argv[1], argv+1, );\n                                        ^\ntime.c:27:3: error: implicit declaration of function 'waitpid' is invalid in C99 [-Werror,-Wimplicit-function-declaration]\n                waitpid(fval, &status, 0);\n                ^\ntime.c:27:11: error: use of undeclared identifier 'fval'\n                waitpid(fval, &status, 0);\n                        ^\ntime.c:28:6: error: implicit declaration of function 'WIFEXITED' is invalid in C99 [-Werror,-Wimplicit-function-declaration]\n                if(WIFEXITED(status))\n                   ^\ntime.c:29:34: error: implicit declaration of function 'WEXITSTATUS' is invalid in C99 [-Werror,-Wimplicit-function-declaration]\n                        printf(\"Child returned %d\\n\", WEXITSTATUS(status));\n                                                      ^\ntime.c:33:17: error: use of undeclared identifier 'CLOCK_MONOTONIC'\n                clock_gettime(CLOCK_MONOTONIC, &end);\n                              ^\n13 errors generated.\nmake: *** [time.o] Error 1\n", 
+        "name": "time_test", 
+        "ptsPossible": 1.0
+      }, 
+      {
+        "description": "Test env", 
+        "ptsEarned": 0.0, 
+        "log": "Did not find correct output", 
+        "name": "env_test", 
+        "ptsPossible": 1.0
+      }, 
+      {
+        "description": "Test env", 
+        "ptsEarned": 0.0, 
+        "log": "Did not find correct output", 
+        "name": "env_test_one", 
+        "ptsPossible": 1.0
+      }, 
+      {
+        "description": "Test env", 
+        "ptsEarned": 0.0, 
+        "log": "Did not find correct output", 
+        "name": "env_test_two", 
+        "ptsPossible": 1.0
+      }, 
+      {
+        "description": "Test env referencing variable", 
+        "ptsEarned": 0.0, 
+        "log": "Did not find correct output", 
+        "name": "env_test_ref", 
+        "ptsPossible": 1.0
+      }, 
+      {
+        "description": "Test env referencing nonexistence variable", 
+        "ptsEarned": 0.0, 
+        "log": "Did not find correct output", 
+        "name": "env_test_ref_empty", 
+        "ptsPossible": 1.0
+      }
+    ], 
+    "revision": "{2016-02-11}"
+  }, 
+  {
+    "timestamp": "2016-02-11 00:22:48.727913", 
+    "testcases": [
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "ptsPossible": 1.0, 
+        "ptsEarned": 1.0, 
+        "name": "time_test_usage", 
+        "description": "Test time usage"
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "ptsPossible": 1.0, 
+        "ptsEarned": 1.0, 
+        "name": "env_test_usage", 
+        "description": "Test env usage"
+      }, 
+      {
+        "log": "Did not find correct output", 
+        "ptsPossible": 1.0, 
+        "ptsEarned": 0.0, 
+        "name": "time_test_exec", 
+        "description": "Test time exec failure"
+      }, 
+      {
+        "log": "Did not find correct output", 
+        "ptsPossible": 1.0, 
+        "ptsEarned": 0.0, 
+        "name": "env_test_exec", 
+        "description": "Test env exec failure"
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "ptsPossible": 1.0, 
+        "ptsEarned": 1.0, 
+        "name": "time_test", 
+        "description": "Test time"
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "ptsPossible": 1.0, 
+        "ptsEarned": 1.0, 
+        "name": "env_test", 
+        "description": "Test env"
+      }, 
+      {
+        "log": "Did not find correct output", 
+        "ptsPossible": 1.0, 
+        "ptsEarned": 0.0, 
+        "name": "env_test_one", 
+        "description": "Test env"
+      }, 
+      {
+        "log": "Did not find correct output", 
+        "ptsPossible": 1.0, 
+        "ptsEarned": 0.0, 
+        "name": "env_test_two", 
+        "description": "Test env"
+      }, 
+      {
+        "log": "Did not find correct output", 
+        "ptsPossible": 1.0, 
+        "ptsEarned": 0.0, 
+        "name": "env_test_ref", 
+        "description": "Test env referencing variable"
+      }, 
+      {
+        "log": "Did not find correct output", 
+        "ptsPossible": 1.0, 
+        "ptsEarned": 0.0, 
+        "name": "env_test_ref_empty", 
+        "description": "Test env referencing nonexistence variable"
+      }
+    ], 
+    "revision": "{2016-02-11}"
+  }
+]
